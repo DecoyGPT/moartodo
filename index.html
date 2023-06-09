@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MoarToDo is a free and simple ToDo list web application. Manage your tasks easily.">
+  <title>Free and Simple ToDo List - MoarToDo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Schema markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "url": "https://www.moartodo.com/",
+    "name": "MoarToDo",
+    "description": "A free and simple ToDo list web application",
+    "keywords": "Task management, ToDo list, Productivity tool, Task organizer, Online ToDo list, Task tracking, Task scheduler, Free ToDo list, Simple ToDo list, Effective task management",
+    "applicationCategory": "Productivity",
+    "operatingSystem": "All",
+    "inLanguage": "en",
+    "dateCreated": 2023,
+    "isAccessibleForFree": true
+  }
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div class="container mt-4">
+      <h1 class="text-center mb-4 d-flex justify-content-center align-items-center">
+        <div id="title" contenteditable="false">MoarToDo: A Free and Simple ToDo List</div>
+        <button id="edit-title-button" class="btn btn-edit ml-2" aria-label="Edit Title">
+          <i class="fas fa-pencil-alt"></i>
+        </button>
+        <button id="info-button" class="btn btn-edit ml-2" aria-label="Info">
+          <i class="fas fa-question-circle"></i>
+        </button>
+      </h1>
+    </div>
+    <div id="info-text" style="display: none;" class="text-center mt-2">
+      MoarToDo is a free and simple ToDo list web application that allows you to manage your tasks easily. 
+      All your tasks are stored in your browser's local storage, not on our servers. 
+      We use Google Analytics for collecting metrics and understanding user behavior. 
+      Click the "?" icon again to hide this information.
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <form id="todo-form">
+        <div class="form-row">
+          <div class="col-9">
+            <input type="text" class="form-control" id="todo-input" placeholder="Enter a task">
+          </div>
+          <div class="col-3">
+            <button type="submit" class="btn btn-primary btn-block">Add <span class="button-label">Task</span></button>
+          </div>
+        </div>
+      </form>
+      <ul id="task-list" class="list-group mt-3"></ul>
+    </div>
+  </main>
+
+  <footer class="text-center mt-4">
+    <p>&copy; 2023 MoarToDo. All rights reserved.</p>
+    <a href="mailto:contact@moartodo.com" class="btn btn-primary">Contact Us</a>
+    <a href="https://paypal.me/decoygpt" target="_blank" rel="noopener noreferrer" class="btn btn-success">Donate</a>
+    <a href="https://github.com/DecoyGPT/moartodo" target="_blank" rel="noopener noreferrer" class="btn btn-dark">GitHub</a>    
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.10.2/Sortable.min.js"></script>
+  <script src="main.js"></script>
+  
+</body>
+
+</html>

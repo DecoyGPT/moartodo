@@ -1,0 +1,21 @@
+footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  #title[contenteditable="true"] {
+      border-bottom: 1px solid #000;
+  }
+  
+  #info-text {
+    display: none;
+    padding-bottom: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .button-label {
+      display: none;
+    }
+  }
